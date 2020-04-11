@@ -1,0 +1,26 @@
+<resources>
+    <properties>
+        <property id="SecsHistory" type="number">5</property>
+        <property id="ClimbCat3" type="float">3</property>
+        <property id="ClimbCat2" type="float">6</property>
+        <property id="ClimbCat1" type="float">9</property>
+        <property id="ClimbCatHc" type="float">12</property>
+    </properties>
+    <settings>
+        <setting propertyKey="@Properties.SecsHistory" title="@Strings.SecsHistoryTitle" prompt="@Strings.SecsHistoryPrompt">
+            <settingConfig type="numeric" required="true" min="1" />
+        </setting>
+        <setting propertyKey="@Properties.ClimbCat3" title="@Strings.ClimbCat3Title" prompt="@Strings.ClimbCatPrompt">
+            <settingConfig type="numeric" required="true" min="0" />
+        </setting>
+        <setting propertyKey="@Properties.ClimbCat2" title="@Strings.ClimbCat2Title" prompt="@Strings.ClimbCatPrompt">
+            <settingConfig type="numeric" required="true" min="0" />
+        </setting>
+        <setting propertyKey="@Properties.ClimbCat1" title="@Strings.ClimbCat1Title" prompt="@Strings.ClimbCatPrompt">
+            <settingConfig type="numeric" required="true" min="0" />
+        </setting>
+        <setting propertyKey="@Properties.ClimbCatHc" title="@Strings.ClimbCatHcTitle" prompt="@Strings.ClimbCatPrompt">
+            <settingConfig type="numeric" required="true" min="0" />
+        </setting>
+    </settings>
+</resources>

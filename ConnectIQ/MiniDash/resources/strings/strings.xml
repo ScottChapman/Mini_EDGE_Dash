@@ -1,0 +1,12 @@
+<strings>
+    <string id="AppName">MiniDash</string>
+    <string id="SecsHistoryTitle">Seconds for Moving Avg Gradient and VAM</string>
+    <string id="SecsHistoryPrompt">REBOOT YOUR DEVICE TO APPLY CHANGE IN THIS SETTING!
+
+Number of seconds to smoothe Gradient and Vertical Ascent Meters (VAM). More seconds will result in more stable calculation and more delay in reflecting current reality.</string> 
+    <string id="ClimbCat3Title">Category 3 climb</string>
+    <string id="ClimbCat2Title">Category 2 climb</string>
+    <string id="ClimbCat1Title">Category 1 climb</string>
+    <string id="ClimbCatHcTitle">Category HC climb</string>
+    <string id="ClimbCatPrompt">Gradient (%) from which (&gt;=) the Category of the Climb is defined.</string>
+</strings>
