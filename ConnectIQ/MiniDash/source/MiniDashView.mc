@@ -1,59 +1,64 @@
 using Toybox.WatchUi;
 using Toybox.Application.Properties;
-using Toybox.System;
 using Toybox.Graphics as Gfx;
+using Toybox.System;
 using Toybox.Time;
 using Toybox.Math;
 
 
 class MiniDashView extends WatchUi.DataField {
 		
-	// CONSTANTS
+	// Set CONSTANTS
+	hidden var FONT_HEIGHT_XTINY = Gfx.getFontHeight(Gfx.FONT_XTINY);
+	hidden var FONT_HEIGHT_TINY = Gfx.getFontHeight(Gfx.FONT_TINY);
+	hidden var FONT_HEIGHT_SMALL = Gfx.getFontHeight(Gfx.FONT_SMALL);
+	hidden var FONT_HEIGHT_MEDIUM = Gfx.getFontHeight(Gfx.FONT_MEDIUM);
+    
+	// Settings
 	hidden var SECONDS_OF_HISTORY = 5;
-    hidden var CLIMB_CAT_3 = 3;
-    hidden var CLIMB_CAT_2 = 6;
-    hidden var CLIMB_CAT_1 = 9;
-    hidden var CLIMB_CAT_Hc = 12;
+    hidden var climbCat3 = 3;
+    hidden var climbCat2 = 6;
+    hidden var climbCat1 = 9;
+    hidden var climbCatHc = 12;
     hidden var metricDistanceUnits = true;
+    hidden var distanceConversion = 0.001f;
     hidden var speedConversion = 3.6f;
-    hidden var mFeetConversion = 1;
+    hidden var altitudeConversion = 1;
+    hidden var hrZones;
 	
 	// Left Section Variables
-	hidden var elapsedDistanceStr = "-.-";
-	hidden var timerTimeStr = "-:--";
-	hidden var startTimeStr = "-:--";
+	hidden var elapsedDistance = 0;
+	hidden var timerTime;
+	hidden var startTime;
+	hidden var currentTime;
 	
 	hidden var distToDest = 0;
 	hidden var routeProgress = 0.5f;
-	hidden var distToDestStr = "-.-";
-	hidden var timeToDestStr = "-:--";
-	hidden var timeAtDestStr = "-:--";
-	hidden var currentTimeStr = "-:--";
+	hidden var timeToDest;
+	hidden var timeAtDest;
 	
 	// Center Section Variables
 	hidden var hr;
 	hidden var hrZone;
-	hidden var heartBeat = true;
-	hidden var cadence;
-	hidden var pedaling = true;
+	hidden var cadence = 0;
+	hidden var blink = true;
 	
 	// Right Section Variables
 	hidden var index = 0;
 	hidden var altitudes = new[SECONDS_OF_HISTORY];
 	hidden var elapsedDistances = new[SECONDS_OF_HISTORY];
 	hidden var speed;
-	hidden var avgSpeed;
-	hidden var avgSpeedStr = "-";
-	hidden var maxSpeed;
-	hidden var ascent;
-	hidden var descent;
+	hidden var avgSpeed = 0;
+	hidden var maxSpeed = 0;
+	hidden var ascent = 0;
+	hidden var descent = 0;
 	hidden var grade = 0;
 	hidden var vam;
 
     function initialize() {
         DataField.initialize();
-
         SECONDS_OF_HISTORY = (Properties.getValue("SecsHistory") == null) ? 5 : Properties.getValue("SecsHistory");
+        hrZones = UserProfile.getHeartRateZones(UserProfile.getCurrentSport());
     }
     
     // The given info object contains all the current workout information.
@@ -62,28 +67,17 @@ class MiniDashView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
     	
-    	// Get Settings
-    	metricDistanceUnits = (System.getDeviceSettings().distanceUnits == System.UNIT_METRIC) ? true : false;
-        speedConversion = metricDistanceUnits ? 3.6 : (3600/1609.344);
-        var metricElevationUnits = (System.getDeviceSettings().elevationUnits == System.UNIT_METRIC) ? true : false;
-        mFeetConversion = metricElevationUnits ? 1 : 0.3048; 
-    	CLIMB_CAT_3 = (Properties.getValue("ClimbCat3") == null) ? 3 : Properties.getValue("ClimbCat3");
-        CLIMB_CAT_2 = (Properties.getValue("ClimbCat2") == null) ? 6 : Properties.getValue("ClimbCat2");
-        CLIMB_CAT_1 = (Properties.getValue("ClimbCat1") == null) ? 9 : Properties.getValue("ClimbCat1");
-        CLIMB_CAT_Hc = (Properties.getValue("ClimbCatHc") == null) ? 12 : Properties.getValue("ClimbCatHc");
+    	getSettings();
         
         var timerState = info.timerState;
     	
     	// Current Values
     	hr = info.currentHeartRate;
-    	cadence = info.currentCadence;
+    	cadence = (info.currentCadence != null) ? (info.currentCadence) : (0);
     	speed = (info.currentSpeed != null) ? (info.currentSpeed * speedConversion) : (null);
-    	var currentTime = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-    	currentTimeStr = Lang.format("$1$:$02$",
-    						[currentTime.hour.format("%02i"), currentTime.min.format("%02i")]);
+    	currentTime = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     	
     	// Calculate HR Zone
-    	var hrZones = UserProfile.getHeartRateZones(UserProfile.getCurrentSport());
     	if (hr != null) {
 	    	for (var i = 0; i < hrZones.size(); i += 1) {
 	    		if (hr <= hrZones[i]) {
@@ -94,34 +88,21 @@ class MiniDashView extends WatchUi.DataField {
 	    } else {
 	    	hrZone = null;
 	    }
-    	
-    	// Store (historical) values for calculation
-        altitudes[index] = info.altitude;
-        elapsedDistances[index] = info.elapsedDistance;
-        var nextIndex = (index + 1) % altitudes.size();
-    	
+    	    	
     	// Active Timer Values
     	if (timerState > Activity.TIMER_STATE_OFF) {
-    		ascent = info.totalAscent;
-    	    descent = info.totalDescent;
-    	    maxSpeed = (info.maxSpeed != null) ? (info.maxSpeed * speedConversion) : (null);
-    	    var elapsedDistance = 0;
-    		if (info.elapsedDistance != null) {
-    			elapsedDistance = info.elapsedDistance;
-    			elapsedDistanceStr = (elapsedDistance / 1000).format("%.1f");
-    		}
-    		var timerTime = new Time.Duration(info.timerTime / 1000);
-    		timerTimeStr = toHMS(timerTime.value());
-    		if (info.startTime != null) {
-	    		var startTime = Time.Gregorian.info(info.startTime, Time.FORMAT_SHORT);
-	    		startTimeStr = Lang.format("$1$:$2$",
-	    						[startTime.hour.format("%02i"), startTime.min.format("%02i")]);
-	    	}
-    		if (info.averageSpeed != null) {
-    			avgSpeed = info.averageSpeed;
-    			avgSpeedStr = (avgSpeed * speedConversion).format("%.1f");
-    		}
+    	    elapsedDistance = (info.elapsedDistance != null) ? (info.elapsedDistance * distanceConversion) : (0);
+    	    avgSpeed = (info.averageSpeed != null) ? (info.averageSpeed * speedConversion) : (0);
+    	    maxSpeed = (info.maxSpeed != null) ? (info.maxSpeed * speedConversion) : (0);
+    		ascent = (info.totalAscent != null) ? (info.totalAscent) : (0);
+    	    descent = (info.totalDescent != null) ? (info.totalDescent) : (0);
+    		timerTime = new Time.Duration(info.timerTime / 1000);
+    		if (info.startTime != null) { startTime = Time.Gregorian.info(info.startTime, Time.FORMAT_SHORT); }
     		
+    		// Store (historical) values for calculation
+    		altitudes[index] = info.altitude;
+    		elapsedDistances[index] = info.elapsedDistance;
+    		var nextIndex = (index + 1) % altitudes.size();
     		var historyReady = (altitudes[index] != null and
     							altitudes[nextIndex] != null and
         						elapsedDistances[index] != null and 
@@ -132,38 +113,45 @@ class MiniDashView extends WatchUi.DataField {
         		grade = (altitudes[index] - altitudes[nextIndex]) / (elapsedDistances[index] - elapsedDistances[nextIndex]) * 100;
 	        	vam = ((altitudes[index] - altitudes[nextIndex]) * 3600 / SECONDS_OF_HISTORY).toNumber();
 	        }
+	        index = nextIndex;
     		
     		// Route Values
-    		distToDest = info.distanceToDestination;
-    		if (distToDest != null and distToDest != 0) {
+    		distToDest = (info.distanceToDestination != null) ? (info.distanceToDestination * distanceConversion) : (0);
+    		if (distToDest != 0) {
     			routeProgress = elapsedDistance / (elapsedDistance + distToDest);
-    			distToDestStr = (distToDest / 1000).format("%.1f");
-    			if (avgSpeed != null and avgSpeed != 0) {
-    				var timeToDest = new Time.Duration(distToDest / avgSpeed);
-    				timeToDestStr = toHMS(timeToDest.value().toLong());
-    				var timeAtDest = Time.Gregorian.info(Time.now().add(timeToDest), Time.FORMAT_SHORT);
-    				timeAtDestStr = Lang.format("$1$:$02$",
-    								[timeAtDest.hour.format("%02i"), timeAtDest.min.format("%02i")]);
+    			if (avgSpeed != 0) {
+    				timeToDest = new Time.Duration(distToDest / avgSpeed * 3600);
+    				timeAtDest = Time.Gregorian.info(Time.now().add(timeToDest), Time.FORMAT_SHORT);
     			}
     		}
     	}
-    	index = nextIndex;
     }
-
+    
+    // Get application Settings and Set Variables accordingly
+    function getSettings() {		
+		// Set distance/speed and altitude conversion factors
+		metricDistanceUnits = (System.getDeviceSettings().distanceUnits == System.UNIT_METRIC) ? true : false;
+	    distanceConversion = metricDistanceUnits ? 0.001 : 1/1609.344;
+	    speedConversion = metricDistanceUnits ? 3.6 : (3600/1609.344);
+	    var metricElevationUnits = (System.getDeviceSettings().elevationUnits == System.UNIT_METRIC) ? true : false;
+	    altitudeConversion = metricElevationUnits ? 1 : 0.3048; 
+		
+		// Set lower bound percentage of Climb Categories
+		climbCat3 = (Properties.getValue("ClimbCat3") == null) ? 3 : Properties.getValue("ClimbCat3");
+	    climbCat2 = (Properties.getValue("ClimbCat2") == null) ? 6 : Properties.getValue("ClimbCat2");
+	    climbCat1 = (Properties.getValue("ClimbCat1") == null) ? 9 : Properties.getValue("ClimbCat1");
+	    climbCatHc = (Properties.getValue("ClimbCatHc") == null) ? 12 : Properties.getValue("ClimbCatHc");
+	}
+    
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc) {
-    	// Set CONSTANTS
-    	var FONT_HEIGHT_XTINY = Gfx.getFontHeight(Gfx.FONT_XTINY);
-    	var FONT_HEIGHT_TINY = Gfx.getFontHeight(Gfx.FONT_TINY);
-    	var FONT_HEIGHT_SMALL = Gfx.getFontHeight(Gfx.FONT_SMALL);
-    	var FONT_HEIGHT_MEDIUM = Gfx.getFontHeight(Gfx.FONT_MEDIUM);
-    	
     	// Get Generic Variables
     	var bgColor = getBackgroundColor();
     	var width = dc.getWidth();
     	var height = dc.getHeight();
     	var x;
+    	var x2;
     	var y1 = height / 6;
     	var y2 = height / 2;
     	var y3 = height * 5 / 6;
@@ -171,52 +159,55 @@ class MiniDashView extends WatchUi.DataField {
     	var justification;
     	var font;
     	
-    	// Display error if data field has less than 240px to display
+    	// Display error if data field has less than 200px to display
     	if (width < 200) {
     		dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     		dc.drawText(width/2, height/2, Gfx.FONT_TINY,
     					"Set wider format", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
     		return;
     	}
-    
-    /////////////////////
-    // Draw Separators //
-    /////////////////////
-    	
-    	dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_TRANSPARENT);
-	    dc.setPenWidth(1);
-	    dc.drawLine(width * 2/5 - 3, 0, width * 2/5 - 3, height);
-	    dc.drawLine(width * 3/5, 0, width * 3/5, height);
     	
     ///////////////////////
     // Draw Left Section //
     ///////////////////////
+    	
+    	var elapsedDistanceStr = (elapsedDistance != 0) ? elapsedDistance.format("%.1f") : "-.-";
+    	var timerTimeStr = (timerTime != null) ? toHMS(timerTime.value()) : "-:--";
+    	var timeToDestStr = (timeToDest != null) ? toHMS(timeToDest.value().toLong()) : "-:--";
+    	var timeAtDestStr = (timeAtDest != null) ? Lang.format("$1$:$2$",[timeAtDest.hour.format("%2i"), timeAtDest.min.format("%02i")]) : "-:--";
+    	var currentTimeStr = (currentTime != null) ? Lang.format("$1$:$2$", [currentTime.hour.format("%2i"), currentTime.min.format("%02i")]) : "-:--";
+    	var startTimeStr = "-:--";
+    	if (startTime != null) {
+    		startTimeStr = Lang.format("$1$:$2$", [startTime.hour.format("%2i"), startTime.min.format("%02i")]);
+    	} else {
+    		startTimeStr = currentTimeStr;
+    	}
     
     	// Draw Progress Bar
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_DK_GREEN : Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT);
-    	if(distToDest != null and distToDest != 0) {
+    	if(distToDest != 0) {
     		dc.fillRectangle(0, 0, width * 2/5 * routeProgress, height);
     	}
     	
     	// Draw Left Values
-    	x = width / 5 -7;
+    	x = width/5 -7;
     	font = Gfx.FONT_TINY;
     	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
-    	
+	    
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     	dc.drawText(x + 2, y1, font, elapsedDistanceStr, justification);
     	dc.drawText(x + 2, y2, font, timerTimeStr, justification);
     	dc.drawText(x + 2, y3, font, startTimeStr, justification);
     	
     	// Draw Right Values
-    	x = width / 5 + 6;
-    	justification = Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER;
-    	if (distToDest != null and distToDest != 0) {
-    		dc.drawText(x - 2, y1, font, distToDestStr, justification);
-    		dc.drawText(x - 2, y2, font, timeToDestStr, justification);
-    		dc.drawText(x - 2, y3, font, timeAtDestStr, justification);
+    	x = x + width/5 + 2;
+    	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
+    	if (distToDest != 0) {
+    		dc.drawText(x, y1, font, distToDest.format("%.1f"), justification);
+    		dc.drawText(x, y2, font, timeToDestStr, justification);
+    		dc.drawText(x, y3, font, timeAtDestStr, justification);
     	} else {
-    		dc.drawText(x - 2, y3, font, currentTimeStr, justification);
+    		if (startTime != null) {dc.drawText(x, y3, font, currentTimeStr, justification);}
     	}
     	
     	// Draw Units / Bridge Characters
@@ -230,10 +221,10 @@ class MiniDashView extends WatchUi.DataField {
     	} else {
     		dc.drawText(x, y1, font, "m", justification);
     	}
-    	if (distToDest != null and distToDest != 0) {
+    	if (distToDest != 0) {
     		dc.drawText(x, y2, font, "~", justification);
     	}
-    	if (!startTimeStr.equals("-:--")) {
+    	if (timeAtDest != null or startTime != null) {
     		dc.drawText(x, y3, font, "~", justification);
     	}
     
@@ -247,15 +238,10 @@ class MiniDashView extends WatchUi.DataField {
     	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     	dc.drawText(x, y1, font, (hr != null) ? hr : "-", justification);
-    	dc.drawText(x, y2, font, (cadence != null) ? cadence : "-", justification);
-    	var speedStr;
-    	if (speed != null and speed != 0) {
-    		speedStr = speed.toNumber();
-    	} else {
-    		speedStr = "-";
-    	} 
+    	dc.drawText(x, y2, font, (cadence != 0) ? cadence : "-", justification);
+    	var speedStr = (speed != null) ? speed.toNumber() : "-";
     	
-    	if ((grade == 0 and speed == 0) or grade.abs() >= CLIMB_CAT_3) {
+    	if ((grade == 0 and speed == 0) or grade.abs() >= climbCat3) {
     		dc.drawText(x, y3, font, speedStr, justification);
     	} else {
     		dc.drawText(x, y3, font, grade.format("%.1f"), justification);
@@ -266,7 +252,7 @@ class MiniDashView extends WatchUi.DataField {
     	font = Gfx.FONT_XTINY;
     	justification = Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-    	if ((grade == 0 and speed == 0) or grade.abs() >= CLIMB_CAT_3) {
+    	if ((grade == 0 and speed == 0) or grade.abs() >= climbCat3) {
     		dc.drawText(x, y3 + 1, font, (metricDistanceUnits) ? "kmh" : "mph", justification);
     	} else {
 	    	if (grade >= 0) {
@@ -287,14 +273,13 @@ class MiniDashView extends WatchUi.DataField {
 	    	// Draw Pedals
 	    penWidth = 2;
 	    dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-	    if (pedaling or cadence == null) {
+	    if (blink or cadence == 0) {
 	    	dc.fillCircle(x, y2, penWidth * 2.5);
 	    	dc.setPenWidth(penWidth);
 	    	dc.drawLine(x - penWidth * 3, y2 - penWidth * 3, x + penWidth * 3, y2 + penWidth * 3);
     		dc.drawLine(x - penWidth * 4, y2 - penWidth * 2.7, x - penWidth * 2, y2 - penWidth * 3.3);
     		dc.drawLine(x + penWidth * 4, y2 + penWidth * 2.7, x + penWidth * 2, y2 + penWidth * 3.3);
 	    }
-	    pedaling = pedaling ? false : true;
 	    
     		// Set Heart Color
     	var heartColor = (bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY;
@@ -317,7 +302,7 @@ class MiniDashView extends WatchUi.DataField {
 	    	// Draw Heart
 	    penWidth = 6;
 	    var heartY = y1 - 4;
-	    if (heartBeat or hrZone == null) {
+	    if (blink or hrZone == null) {
 	    	dc.setPenWidth(penWidth);
 	    	dc.setColor(heartColor, Gfx.COLOR_TRANSPARENT);
 	    	dc.fillCircle(x - penWidth / 2.1, heartY, penWidth / 2);
@@ -327,14 +312,15 @@ class MiniDashView extends WatchUi.DataField {
 	    					[x + 0.96 * penWidth, heartY + penWidth / 6],
 	    					[x, heartY + penWidth * 1.5]]);
 	    }
-	    heartBeat = heartBeat ? false : true;
+	    
+	    blink = blink ? false : true;
 	    
 	////////////////////////
 	// Draw Right Section //
 	////////////////////////
 	    
 	    // If Gradient is less than a Cat 3 Climb, draw Speedometer, otherwise, draw Gradient visuals
-	    if (grade.abs() < CLIMB_CAT_3) {
+	    if (grade.abs() < climbCat3) {
 	    
 	    //////////////////////
 	    // Draw Speedometer //
@@ -346,11 +332,16 @@ class MiniDashView extends WatchUi.DataField {
 	    	var arc = width / 5 - 10;
 	    	var h;
 	    	var v;
-	    	if (maxSpeed != null and maxSpeed != 0) {
-	    		if (speed != null) {speedDegree = 180 - speed / maxSpeed * 180;}
-	    		if (avgSpeed != null) {
-	    			avgSpeedDegree = 180 - (avgSpeed * speedConversion) / maxSpeed * 180;
-	    			var t = ((avgSpeed * speedConversion) / maxSpeed * 180 - 180) * Math.PI/180;
+	    	if (maxSpeed != 0) {
+	    		if (speed != 0) {speedDegree = 180 - speed / maxSpeed * 180;}
+	    		if (avgSpeed != 0) {
+	    			avgSpeedDegree = 180 - avgSpeed / maxSpeed * 180;
+		    		// Given a radius length r and an angle t in radians and a circle's center (h,v),
+		    		// you can calculate the coordinates of a point on the circumference as follows
+		    		// h = r*cos(t) + x
+		    		// v = r*sin(t) + y
+		    		// radians = degrees * PI/180
+	    			var t = (avgSpeed / maxSpeed * 180 - 180) * Math.PI/180;
 	    			h = (arc * Math.cos(t) + x).toNumber();
 	    			v = (arc * Math.sin(t) + height).toNumber();
 	    		}
@@ -372,11 +363,6 @@ class MiniDashView extends WatchUi.DataField {
 	    	dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_TRANSPARENT);
 	    	dc.drawArc(x, height, arc, Gfx.ARC_CLOCKWISE, 180, avgSpeedDegree);
 	    	// Draw Average Speed marker on the Arc of the Speedometer
-	    		// Given a radius length r and an angle t in radians and a circle's center (h,v),
-	    		// you can calculate the coordinates of a point on the circumference as follows
-	    		// h = r*cos(t) + x
-	    		// v = r*sin(t) + y
-	    		// radians = degrees * PI/180
 	    	dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_TRANSPARENT);
 	    	if (h != null and v != null) {dc.fillCircle(h, v, 3);}
 	    	
@@ -392,9 +378,9 @@ class MiniDashView extends WatchUi.DataField {
 	    				Gfx.FONT_MEDIUM, speedStr, Gfx.TEXT_JUSTIFY_CENTER);
 	    	// Draw Average Speed value
 	    	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
-	    	dc.drawText(width * 3/5 + 2, 0, Gfx.FONT_SMALL, avgSpeedStr, Gfx.TEXT_JUSTIFY_LEFT);
+	    	dc.drawText(width * 3/5 + 2, 0, Gfx.FONT_SMALL, avgSpeed.format("%.1f"), Gfx.TEXT_JUSTIFY_LEFT);
 	    	// Draw Max Speed value
-	    	dc.drawText(width - 2, 0, Gfx.FONT_SMALL, (maxSpeed != null) ? maxSpeed.format("%.1f") : "-", Gfx.TEXT_JUSTIFY_RIGHT);
+	    	dc.drawText(width - 2, 0, Gfx.FONT_SMALL, maxSpeed.format("%.1f"), Gfx.TEXT_JUSTIFY_RIGHT);
 	    	// Draw Average Speed label
 	    	dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_TRANSPARENT);
 	    	dc.drawText(width * 3/5 + 2, FONT_HEIGHT_SMALL - 3, Gfx.FONT_XTINY, "avg", Gfx.TEXT_JUSTIFY_LEFT);
@@ -416,13 +402,11 @@ class MiniDashView extends WatchUi.DataField {
 	    	var ascDescHeight = FONT_HEIGHT_TINY;
 	    	var ascDescY = height - ascDescHeight;
 	    	var ascDescSplit = width / 5;
-	    	var ascentStr = "0";
-	    	var descentStr = "-0";
-	    	if (ascent != 0 and descent != 0 and ascent != null and descent != null) {
-	    		ascDescSplit = (ascent / (ascent + descent) * width * 2/5).toNumber();
+	    	var ascentStr = (ascent / altitudeConversion).format("%i");
+	    	var descentStr = "-" + (descent / altitudeConversion).format("%i");
+	    	if (ascent != 0 and descent != 0) {
+	    		ascDescSplit = (ascent / (ascent + descent) * width * 2/5);
 	    	}
-	    	if (ascent != null and ascent !=0) {ascentStr = (ascent / mFeetConversion).format("%i");}
-	    	if (descent != null and descent != 0) {descentStr = "-" + (descent / mFeetConversion).format("%i");}
 	    	// Draw Ascent Bar
 	    	dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_DK_BLUE);
 	    	dc.fillRectangle(x, ascDescY, ascDescSplit, ascDescHeight);
@@ -450,43 +434,43 @@ class MiniDashView extends WatchUi.DataField {
 	    	
 	    	// Set Triangle Color
 	    	var gradeColor = Gfx.COLOR_TRANSPARENT;
-	    	if (grade < CLIMB_CAT_3 and grade >= -CLIMB_CAT_3) {
+	    	if (grade < climbCat3 and grade >= -climbCat3) {
 	    		gradeColor = Gfx.COLOR_GREEN;
-	    	} else if ((grade >= CLIMB_CAT_3 and grade < CLIMB_CAT_2) or (grade > -CLIMB_CAT_2 and grade <= -CLIMB_CAT_3)) {
+	    	} else if ((grade >= climbCat3 and grade < climbCat2) or (grade > -climbCat2 and grade <= -climbCat3)) {
 	    		gradeColor = 0xF6E700; // Yellow
-	    	} else if ((grade >= CLIMB_CAT_2 and grade < CLIMB_CAT_1) or (grade > -CLIMB_CAT_1 and grade <= -CLIMB_CAT_2)) {
+	    	} else if ((grade >= climbCat2 and grade < climbCat1) or (grade > -climbCat1 and grade <= -climbCat2)) {
 	    		gradeColor = 0xEFA606; // Orange
-	    	} else if ((grade >= CLIMB_CAT_1 and grade < CLIMB_CAT_Hc) or (grade > -CLIMB_CAT_Hc and grade <= -CLIMB_CAT_1)) {
+	    	} else if ((grade >= climbCat1 and grade < climbCatHc) or (grade > -climbCatHc and grade <= -climbCat1)) {
 	    		gradeColor = 0xC80317; // Red
-	    	} else if (grade >= CLIMB_CAT_Hc or grade <= -CLIMB_CAT_Hc) {
+	    	} else if (grade >= climbCatHc or grade <= -climbCatHc) {
 	    		gradeColor = 0x4D0600; // Dark Red
 	    	}
 	    	
 	    	// Draw Triangle
 	    	dc.setColor(gradeColor, gradeColor);
-	    	var gradeAngle = (grade.abs() / (CLIMB_CAT_Hc + 3) * gradeHeight).toNumber();
+	    	var gradeAngle = (grade.abs() / (climbCatHc + 3) * gradeHeight).toNumber();
 	    	var triangleY = [0, gradeHeight - gradeAngle];
-	    	dc.fillPolygon([[x + 1,gradeHeight],[width,gradeHeight],[(grade >= 0) ? width : x + 1, gradeHeight - gradeAngle]]);
+	    	dc.fillPolygon([[x,gradeHeight],[width,gradeHeight],[(grade >= 0) ? width : x, gradeHeight - gradeAngle]]);
 	    	// Draw Value
-	    	if (grade >= CLIMB_CAT_3) {
+	    	if (grade >= climbCat3) {
 	    	// When Gradient >= Cat3 climb, draw VAM
 	    	    dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
 	    	    dc.drawText(x + 3, 2, Gfx.FONT_SMALL, vam, Gfx.TEXT_JUSTIFY_LEFT);
 	    	    // When Gradient >= Cat1 climb, change drawing color (for Gradient)
 	    	    // to WHITE to remain visible in RED or DK_RED area
-	    	    if (grade >= CLIMB_CAT_1) {dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);}
+	    	    if (grade >= climbCat1) {dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);}
 				// Draw Gradient in the bottom of the triangle
 	    		dc.drawText(width - 2, gradeHeight - FONT_HEIGHT_SMALL, Gfx.FONT_SMALL, gradeStr + "%", Gfx.TEXT_JUSTIFY_RIGHT);
 	    		// Draw VAM unit
 	    		dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 	    		dc.drawText(x + 3, FONT_HEIGHT_SMALL - 3, Gfx.FONT_XTINY, "vam", Gfx.TEXT_JUSTIFY_LEFT);
-	    	} else if (grade <= -CLIMB_CAT_3) {
+	    	} else if (grade <= -climbCat3) {
 	    	// When Gradient <= Cat3 descent, draw Speed
 	    	    dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
 	    	    dc.drawText(width - 2, 2, Gfx.FONT_SMALL, speedStr, Gfx.TEXT_JUSTIFY_RIGHT);
 	    	    // When Gradient <= Cat1 descent, change drawing color (for Gradient)
 	    	    // to WHITE to remain visible in RED or DK_RED area
-	    	    if (grade <= -CLIMB_CAT_1) {dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);}
+	    	    if (grade <= -climbCat1) {dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);}
 	    		// Draw Gradient in the bottom of the triangle
 	    		dc.drawText(x + 3, gradeHeight - FONT_HEIGHT_SMALL, Gfx.FONT_SMALL, gradeStr + "%", Gfx.TEXT_JUSTIFY_LEFT);
 	    		// Draw Speed unit
@@ -498,6 +482,15 @@ class MiniDashView extends WatchUi.DataField {
 	    	    dc.drawText(width * 4/5, 2, Gfx.FONT_SMALL, gradeStr + "%", Gfx.TEXT_JUSTIFY_CENTER);
 	    	}
 	    }
+    
+    /////////////////////
+    // Draw Separators //
+    /////////////////////
+    	
+    	dc.setColor(Gfx.COLOR_DK_BLUE, Gfx.COLOR_TRANSPARENT);
+	    dc.setPenWidth(1);
+	    dc.drawLine(width * 2/5 - 3, 0, width * 2/5 - 3, height);
+	    dc.drawLine(width * 3/5, 0, width * 3/5, height);
     }
     
     function toHMS(secs) {
@@ -506,7 +499,7 @@ class MiniDashView extends WatchUi.DataField {
     	var min = (secs - (hr * 3600)) / 60;
     	var sec = secs % 60;
     	return (hr >= 1) ? 
-    		(hr.format("%1d") + ":" + min.format("%02d")) : 
-    		(min.format("%1d") + ":" + sec.format("%02d"));
+    		(hr.format("%1i") + ":" + min.format("%02i")) : 
+    		(min.format("%1i") + ":" + sec.format("%02i"));
     }
 }
