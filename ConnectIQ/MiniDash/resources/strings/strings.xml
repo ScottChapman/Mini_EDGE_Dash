@@ -1,12 +1,16 @@
 <strings>
-    <string id="AppName">MiniDash</string>
-    <string id="SecsHistoryTitle">Seconds for Moving Avg Gradient and VAM</string>
-    <string id="SecsHistoryPrompt">REBOOT YOUR DEVICE TO APPLY CHANGE IN THIS SETTING!
-
-Number of seconds to smoothe Gradient and Vertical Ascent Meters (VAM). More seconds will result in more stable calculation and more delay in reflecting current reality.</string> 
-    <string id="ClimbCat3Title">Category 3 climb</string>
-    <string id="ClimbCat2Title">Category 2 climb</string>
-    <string id="ClimbCat1Title">Category 1 climb</string>
-    <string id="ClimbCatHcTitle">Category HC climb</string>
-    <string id="ClimbCatPrompt">Gradient (%) from which (&gt;=) the Category of the Climb is defined.</string>
+    <string id="AppName">MiniDash BETA</string>
+    <string id="ClimbCat3_Title">Category 3 climb</string>
+    <string id="ClimbCat2_Title">Category 2 climb</string>
+    <string id="ClimbCat1_Title">Category 1 climb</string>
+    <string id="ClimbCatHc_Title">Category HC climb</string>
+    <string id="ClimbCat_Prompt">Gradient (&gt;= %) for Climb Category.</string>
+    <string id="Altitude_ErrMeasure_Title">Altitude - Error of the Measure</string>
+    <string id="Altitude_ErrEstimate_Title">Altitude - Error of the Estimate</string>
+    <string id="Altitude_MaxProcessNoise_Title">Altitude - Maximum Process Noise</string>
+    <string id="Distance_ErrMeasure_Title">Distance - Error of the Measure</string>
+    <string id="Distance_ErrEstimate_Title">Distance - Error of the Estimate</string>
+    <string id="Distance_MaxProcessNoise_Title">Distance - Maximum Process Noise</string>
+    <string id="KalmanFilter_Prompt">ADVANCED SETTING: Leave these if you don't know what you're doing!
+Use these variables to fine-tune Kalman Filters for Altitude and Distance</string>
 </strings>
