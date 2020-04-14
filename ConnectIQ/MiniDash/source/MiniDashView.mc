@@ -58,18 +58,42 @@ class MiniDashView extends WatchUi.DataField {
 
     function initialize() {
         DataField.initialize();
+		
+		// Set distance/speed and altitude conversion factors
+		metricDistanceUnits = (System.getDeviceSettings().distanceUnits == System.UNIT_METRIC) ? true : false;
+	    distanceConversion = metricDistanceUnits ? 0.001 : 1/1609.344;
+	    speedConversion = metricDistanceUnits ? 3.6 : (3600/1609.344);
+	    var metricElevationUnits = (System.getDeviceSettings().elevationUnits == System.UNIT_METRIC) ? true : false;
+	    altitudeConversion = metricElevationUnits ? 1 : 0.3048; 
+		
+        // get current Sport's Heart Rate Zones
         hrZones = UserProfile.getHeartRateZones(UserProfile.getCurrentSport());
         
+        // Initialize Variables based on App Settings
+        updateSettings();
+    }
+    
+    // Update Variables upon MiniDashApp.onSettingsChanged()
+    function updateSettings() {
+		// Set lower bound percentage of Climb Categories
+		climbCat3 = Properties.getValue("ClimbCat3").toFloat();
+	    climbCat2 = Properties.getValue("ClimbCat2").toFloat();
+	    climbCat1 = Properties.getValue("ClimbCat1").toFloat();
+	    climbCatHc = Properties.getValue("ClimbCatHc").toFloat();
+	    
+	    // Create new Kalman Filter for Altitude
         var errMeasure = Properties.getValue("AltErrMeasure").toFloat();
         var errEstimate = Properties.getValue("AltErrEstimate").toFloat();
         var maxProcessNoise = Properties.getValue("AltMaxProcessNoise").toFloat();
         altitudeKalmanFilter = new SimpleKalmanFilter(errMeasure, errEstimate, maxProcessNoise);
         
+        // Create new Kalman Filter for Distance
         errMeasure = Properties.getValue("DistErrMeasure").toFloat();
         errEstimate = Properties.getValue("DistErrEstimate").toFloat();
         maxProcessNoise = Properties.getValue("DistMaxProcessNoise").toFloat();
         distanceKalmanFilter = new SimpleKalmanFilter(errMeasure, errEstimate, maxProcessNoise);
     }
+    
     
     function onTimerStart() {
     	altitudeKalmanFilter.setInitialState(altitude);
@@ -87,8 +111,6 @@ class MiniDashView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
     	
-    	getSettings();
-        
         var timerState = info.timerState;
     	
     	// Current Values
@@ -142,23 +164,6 @@ class MiniDashView extends WatchUi.DataField {
     		}
     	}
     }
-    
-    // Get application Settings and Set Variables accordingly
-    function getSettings() {		
-		// Set distance/speed and altitude conversion factors
-		metricDistanceUnits = (System.getDeviceSettings().distanceUnits == System.UNIT_METRIC) ? true : false;
-		System.println(metricDistanceUnits);
-	    distanceConversion = metricDistanceUnits ? 0.001 : 1/1609.344;
-	    speedConversion = metricDistanceUnits ? 3.6 : (3600/1609.344);
-	    var metricElevationUnits = (System.getDeviceSettings().elevationUnits == System.UNIT_METRIC) ? true : false;
-	    altitudeConversion = metricElevationUnits ? 1 : 0.3048; 
-		
-		// Set lower bound percentage of Climb Categories
-		climbCat3 = Properties.getValue("ClimbCat3").toFloat();
-	    climbCat2 = Properties.getValue("ClimbCat2").toFloat();
-	    climbCat1 = Properties.getValue("ClimbCat1").toFloat();
-	    climbCatHc = Properties.getValue("ClimbCatHc").toFloat();
-	}
     
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.

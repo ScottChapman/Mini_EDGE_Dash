@@ -2,12 +2,15 @@ using Toybox.Application;
 
 class MiniDashApp extends Application.AppBase {
 
+    hidden var datafieldView;
+    
     function initialize() {
         AppBase.initialize();
     }
 
     // onStart() is called on application start up
     function onStart(state) {
+    	datafieldView = [ new MiniDashView() ];
     }
 
     // onStop() is called when your application is exiting
@@ -16,7 +19,12 @@ class MiniDashApp extends Application.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new MiniDashView() ];
+        return datafieldView;
     }
+    
+    // Create new Kalman Filter upon onSettingsChanged
+    function onSettingsChanged() {
+    	datafieldView[0].updateSettings();
+    }  
 
 }
