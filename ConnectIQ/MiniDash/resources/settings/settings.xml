@@ -4,12 +4,12 @@
         <property id="ClimbCat2" type="float">6</property>
         <property id="ClimbCat1" type="float">9</property>
         <property id="ClimbCatHc" type="float">12</property>
-        <property id="AltErrMeasure" type="float">2.5</property>
-        <property id="AltErrEstimate" type="float">0.50</property>
-        <property id="AltMaxProcessNoise" type="float">0.10</property>
-        <property id="DistErrMeasure" type="float">1.0</property>
+        <property id="AltErrMeasure" type="float">5</property>
+        <property id="AltErrEstimate" type="float">0.5</property>
+        <property id="AltMaxProcessNoise" type="float">0.1</property>
+        <property id="DistErrMeasure" type="float">5</property>
         <property id="DistErrEstimate" type="float">0.10</property>
-        <property id="DistMaxProcessNoise" type="float">0.05</property>
+        <property id="DistMaxProcessNoise" type="float">2</property>
     </properties>
     <settings>
         <setting propertyKey="@Properties.ClimbCat3" title="@Strings.ClimbCat3_Title" prompt="@Strings.ClimbCat_Prompt">

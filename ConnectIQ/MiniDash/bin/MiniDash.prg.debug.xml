@@ -30,293 +30,294 @@
 <entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashApp.mc" id="12" lineNum="14" pc="268435835" symbol="onStop"/>
 <entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashApp.mc" id="13" lineNum="18" pc="268435840" symbol="getInitialView"/>
 <entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashApp.mc" id="13" lineNum="19" pc="268435844" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="58" pc="268435882" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="59" pc="268435886" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="60" pc="268435904" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="62" pc="268435946" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="63" pc="268435968" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="64" pc="268435990" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="65" pc="268436012" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="67" pc="268436048" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="68" pc="268436070" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="69" pc="268436092" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="70" pc="268436114" symbol="initialize"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="73" pc="268436151" symbol="onTimerStart"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="74" pc="268436155" symbol="onTimerStart"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="75" pc="268436181" symbol="onTimerStart"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="78" pc="268436208" symbol="onTimerResume"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="79" pc="268436212" symbol="onTimerResume"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="80" pc="268436238" symbol="onTimerResume"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="87" pc="268436265" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="89" pc="268436269" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="91" pc="268436281" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="94" pc="268436291" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="95" pc="268436307" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="96" pc="268436344" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="97" pc="268436377" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="98" pc="268436433" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="101" pc="268436449" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="102" pc="268436462" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="103" pc="268436492" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="104" pc="268436515" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="105" pc="268436525" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="109" pc="268436547" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="113" pc="268436556" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="114" pc="268436576" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="115" pc="268436613" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="116" pc="268436650" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="117" pc="268436687" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="118" pc="268436724" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="119" pc="268436761" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="120" pc="268436809" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="120" pc="268436822" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="123" pc="268436874" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="124" pc="268436891" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="125" pc="268436910" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="126" pc="268436929" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="127" pc="268436956" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="128" pc="268436983" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="129" pc="268437008" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="133" pc="268437039" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="134" pc="268437076" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="135" pc="268437093" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="136" pc="268437127" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="137" pc="268437144" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="138" pc="268437195" symbol="compute"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="145" pc="268437278" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="147" pc="268437282" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="148" pc="268437334" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="149" pc="268437366" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="150" pc="268437398" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="151" pc="268437444" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="154" pc="268437470" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="155" pc="268437498" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="156" pc="268437526" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="157" pc="268437554" symbol="getSettings"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="162" pc="268437583" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="164" pc="268437587" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="165" pc="268437600" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="166" pc="268437613" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="167" pc="268437626" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="168" pc="268437626" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="169" pc="268437626" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="170" pc="268437636" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="171" pc="268437646" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="172" pc="268437662" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="173" pc="268437662" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="174" pc="268437662" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="177" pc="268437662" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="178" pc="268437673" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="179" pc="268437742" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="181" pc="268437812" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="188" pc="268437816" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="189" pc="268437874" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="190" pc="268437925" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="191" pc="268437985" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="192" pc="268438108" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="193" pc="268438231" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="194" pc="268438238" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="195" pc="268438251" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="197" pc="268438356" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="201" pc="268438360" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="202" pc="268438429" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="203" pc="268438446" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="207" pc="268438496" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="208" pc="268438512" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="209" pc="268438526" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="211" pc="268438553" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="212" pc="268438622" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="213" pc="268438650" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="214" pc="268438678" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="217" pc="268438706" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="218" pc="268438725" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="219" pc="268438752" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="220" pc="268438769" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="221" pc="268438820" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="222" pc="268438842" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="224" pc="268438867" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="224" pc="268438880" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="228" pc="268438905" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="229" pc="268438915" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="230" pc="268438929" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="231" pc="268438956" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="232" pc="268439025" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="233" pc="268439036" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="234" pc="268439086" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="236" pc="268439130" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="238" pc="268439155" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="239" pc="268439172" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="241" pc="268439200" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="242" pc="268439229" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="250" pc="268439257" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="251" pc="268439279" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="252" pc="268439293" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="253" pc="268439320" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="254" pc="268439389" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="255" pc="268439438" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="256" pc="268439491" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="258" pc="268439540" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="259" pc="268439609" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="261" pc="268439634" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="265" pc="268439676" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="266" pc="268439698" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="267" pc="268439712" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="268" pc="268439739" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="269" pc="268439808" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="270" pc="268439877" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="272" pc="268439930" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="273" pc="268439947" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="276" pc="268440148" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="277" pc="268440217" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="279" pc="268440274" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="282" pc="268440475" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="283" pc="268440544" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="288" pc="268440598" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="289" pc="268440605" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="290" pc="268440674" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="291" pc="268440705" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="292" pc="268440729" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="293" pc="268440743" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="294" pc="268440799" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="295" pc="268440855" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="299" pc="268440914" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="300" pc="268440961" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="301" pc="268440974" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="302" pc="268440991" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="303" pc="268441008" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="304" pc="268441025" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="305" pc="268441042" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="306" pc="268441059" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="307" pc="268441076" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="308" pc="268441093" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="309" pc="268441110" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="310" pc="268441127" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="312" pc="268441137" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="317" pc="268441154" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="318" pc="268441161" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="319" pc="268441171" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="320" pc="268441198" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="321" pc="268441212" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="322" pc="268441238" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="323" pc="268441271" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="324" pc="268441304" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="330" pc="268441506" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="337" pc="268441532" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="343" pc="268441561" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="344" pc="268441577" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="345" pc="268441584" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="346" pc="268441591" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="347" pc="268441607" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="348" pc="268441607" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="349" pc="268441607" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="350" pc="268441624" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="350" pc="268441641" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="351" pc="268441675" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="352" pc="268441692" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="358" pc="268441723" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="359" pc="268441773" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="360" pc="268441807" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="366" pc="268441847" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="367" pc="268441861" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="368" pc="268441897" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="369" pc="268441943" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="370" pc="268441979" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="372" pc="268442022" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="374" pc="268442039" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="375" pc="268442075" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="377" pc="268442115" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="378" pc="268442151" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="380" pc="268442188" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="381" pc="268442224" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="381" pc="268442241" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="385" pc="268442265" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="386" pc="268442301" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="387" pc="268442334" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="389" pc="268442370" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="391" pc="268442377" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="394" pc="268442428" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="395" pc="268442497" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="397" pc="268442589" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="399" pc="268442669" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="400" pc="268442705" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="402" pc="268442780" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="403" pc="268442816" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="405" pc="268442879" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="406" pc="268442948" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="414" pc="268443024" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="415" pc="268443040" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="416" pc="268443054" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="417" pc="268443064" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="418" pc="268443071" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="419" pc="268443081" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="420" pc="268443114" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="421" pc="268443153" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="422" pc="268443190" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="425" pc="268443236" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="426" pc="268443272" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="428" pc="268443292" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="429" pc="268443328" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="431" pc="268443372" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="432" pc="268443408" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="434" pc="268443446" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="438" pc="268443653" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="439" pc="268443689" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="446" pc="268443727" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="447" pc="268443751" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="450" pc="268443758" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="451" pc="268443772" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="452" pc="268443821" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="453" pc="268443838" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="454" pc="268443939" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="455" pc="268443949" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="456" pc="268444050" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="457" pc="268444060" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="458" pc="268444161" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="459" pc="268444171" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="460" pc="268444220" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="464" pc="268444230" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="465" pc="268444246" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="466" pc="268444292" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="467" pc="268444326" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="469" pc="268444471" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="471" pc="268444491" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="472" pc="268444560" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="475" pc="268444638" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="475" pc="268444658" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="477" pc="268444697" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="479" pc="268444760" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="480" pc="268444829" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="481" pc="268444895" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="483" pc="268444921" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="484" pc="268444990" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="487" pc="268445041" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="487" pc="268445067" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="489" pc="268445106" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="491" pc="268445169" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="492" pc="268445238" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="495" pc="268445323" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="496" pc="268445392" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="504" pc="268445455" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="505" pc="268445491" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="506" pc="268445508" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="507" pc="268445567" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="511" pc="268445615" symbol="toHMS"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="512" pc="268445619" symbol="toHMS"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="513" pc="268445629" symbol="toHMS"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="514" pc="268445648" symbol="toHMS"/>
-<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="515" pc="268445658" symbol="toHMS"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="59" pc="268435882" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="60" pc="268435886" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="61" pc="268435904" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="63" pc="268435946" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="64" pc="268435977" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="65" pc="268436008" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="66" pc="268436039" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="68" pc="268436075" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="69" pc="268436106" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="70" pc="268436137" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="15" lineNum="71" pc="268436168" symbol="initialize"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="74" pc="268436205" symbol="onTimerStart"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="75" pc="268436209" symbol="onTimerStart"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="16" lineNum="76" pc="268436235" symbol="onTimerStart"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="79" pc="268436271" symbol="onTimerResume"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="80" pc="268436275" symbol="onTimerResume"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="17" lineNum="81" pc="268436301" symbol="onTimerResume"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="88" pc="268436337" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="90" pc="268436341" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="92" pc="268436353" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="95" pc="268436363" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="96" pc="268436379" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="97" pc="268436416" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="98" pc="268436453" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="99" pc="268436509" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="102" pc="268436525" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="103" pc="268436538" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="104" pc="268436568" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="105" pc="268436591" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="106" pc="268436601" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="110" pc="268436623" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="114" pc="268436632" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="115" pc="268436652" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="116" pc="268436689" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="117" pc="268436726" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="118" pc="268436763" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="119" pc="268436800" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="120" pc="268436837" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="121" pc="268436885" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="121" pc="268436898" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="124" pc="268436950" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="125" pc="268436967" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="126" pc="268436986" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="127" pc="268437005" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="128" pc="268437032" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="129" pc="268437068" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="129" pc="268437079" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="130" pc="268437104" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="132" pc="268437135" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="135" pc="268437151" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="136" pc="268437188" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="137" pc="268437205" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="138" pc="268437239" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="139" pc="268437256" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="18" lineNum="140" pc="268437307" symbol="compute"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="147" pc="268437390" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="149" pc="268437394" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="150" pc="268437446" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="151" pc="268437470" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="152" pc="268437502" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="153" pc="268437534" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="154" pc="268437580" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="157" pc="268437606" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="158" pc="268437643" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="159" pc="268437680" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="19" lineNum="160" pc="268437717" symbol="getSettings"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="165" pc="268437755" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="167" pc="268437759" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="168" pc="268437772" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="169" pc="268437785" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="170" pc="268437798" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="171" pc="268437798" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="172" pc="268437798" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="173" pc="268437808" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="174" pc="268437818" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="175" pc="268437834" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="176" pc="268437834" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="177" pc="268437834" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="180" pc="268437834" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="181" pc="268437845" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="182" pc="268437914" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="184" pc="268437984" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="191" pc="268437988" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="192" pc="268438046" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="193" pc="268438097" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="194" pc="268438157" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="195" pc="268438280" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="196" pc="268438403" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="197" pc="268438410" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="198" pc="268438423" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="200" pc="268438528" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="204" pc="268438532" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="205" pc="268438601" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="206" pc="268438618" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="210" pc="268438668" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="211" pc="268438684" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="212" pc="268438698" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="214" pc="268438725" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="215" pc="268438794" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="216" pc="268438822" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="217" pc="268438850" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="220" pc="268438878" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="221" pc="268438897" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="222" pc="268438924" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="223" pc="268438941" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="224" pc="268438992" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="225" pc="268439014" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="227" pc="268439039" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="227" pc="268439052" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="231" pc="268439077" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="232" pc="268439087" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="233" pc="268439101" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="234" pc="268439128" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="235" pc="268439197" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="236" pc="268439208" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="237" pc="268439258" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="239" pc="268439302" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="241" pc="268439327" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="242" pc="268439344" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="244" pc="268439372" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="245" pc="268439401" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="253" pc="268439429" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="254" pc="268439451" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="255" pc="268439465" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="256" pc="268439492" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="257" pc="268439561" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="258" pc="268439610" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="259" pc="268439663" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="261" pc="268439716" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="262" pc="268439785" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="264" pc="268439810" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="268" pc="268439852" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="269" pc="268439874" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="270" pc="268439888" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="271" pc="268439915" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="272" pc="268439984" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="273" pc="268440053" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="275" pc="268440106" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="276" pc="268440123" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="279" pc="268440324" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="280" pc="268440393" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="282" pc="268440450" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="285" pc="268440651" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="286" pc="268440720" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="291" pc="268440774" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="292" pc="268440781" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="293" pc="268440850" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="294" pc="268440881" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="295" pc="268440905" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="296" pc="268440919" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="297" pc="268440975" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="298" pc="268441031" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="302" pc="268441090" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="303" pc="268441137" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="304" pc="268441150" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="305" pc="268441167" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="306" pc="268441184" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="307" pc="268441201" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="308" pc="268441218" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="309" pc="268441235" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="310" pc="268441252" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="311" pc="268441269" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="312" pc="268441286" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="313" pc="268441303" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="315" pc="268441313" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="320" pc="268441330" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="321" pc="268441337" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="322" pc="268441347" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="323" pc="268441374" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="324" pc="268441388" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="325" pc="268441414" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="326" pc="268441447" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="327" pc="268441480" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="333" pc="268441682" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="340" pc="268441708" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="346" pc="268441737" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="347" pc="268441753" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="348" pc="268441760" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="349" pc="268441767" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="350" pc="268441783" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="351" pc="268441783" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="352" pc="268441783" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="353" pc="268441800" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="353" pc="268441817" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="354" pc="268441851" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="355" pc="268441868" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="361" pc="268441899" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="362" pc="268441949" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="363" pc="268441983" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="369" pc="268442023" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="370" pc="268442037" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="371" pc="268442073" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="372" pc="268442119" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="373" pc="268442155" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="375" pc="268442198" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="377" pc="268442215" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="378" pc="268442251" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="380" pc="268442291" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="381" pc="268442327" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="383" pc="268442364" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="384" pc="268442400" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="384" pc="268442417" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="388" pc="268442441" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="389" pc="268442477" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="390" pc="268442535" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="393" pc="268442586" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="394" pc="268442655" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="396" pc="268442747" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="398" pc="268442827" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="399" pc="268442863" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="401" pc="268442938" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="402" pc="268442974" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="404" pc="268443037" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="405" pc="268443106" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="413" pc="268443182" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="414" pc="268443198" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="415" pc="268443212" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="416" pc="268443222" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="417" pc="268443229" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="418" pc="268443239" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="419" pc="268443272" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="420" pc="268443311" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="421" pc="268443348" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="424" pc="268443394" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="425" pc="268443430" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="427" pc="268443450" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="428" pc="268443486" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="430" pc="268443530" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="431" pc="268443566" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="433" pc="268443604" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="437" pc="268443811" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="438" pc="268443847" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="445" pc="268443885" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="446" pc="268443909" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="449" pc="268443916" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="450" pc="268443930" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="451" pc="268443979" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="452" pc="268443996" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="453" pc="268444097" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="454" pc="268444107" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="455" pc="268444208" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="456" pc="268444218" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="457" pc="268444319" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="458" pc="268444329" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="459" pc="268444378" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="463" pc="268444388" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="464" pc="268444404" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="465" pc="268444450" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="466" pc="268444484" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="468" pc="268444629" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="470" pc="268444649" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="471" pc="268444718" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="474" pc="268444796" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="474" pc="268444816" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="476" pc="268444855" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="478" pc="268444918" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="479" pc="268444987" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="480" pc="268445053" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="482" pc="268445079" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="483" pc="268445148" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="486" pc="268445199" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="486" pc="268445225" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="488" pc="268445264" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="490" pc="268445327" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="491" pc="268445396" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="494" pc="268445481" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="495" pc="268445550" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="503" pc="268445613" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="504" pc="268445649" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="505" pc="268445666" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="20" lineNum="506" pc="268445725" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="510" pc="268445773" symbol="toHMS"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="511" pc="268445777" symbol="toHMS"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="512" pc="268445787" symbol="toHMS"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="513" pc="268445806" symbol="toHMS"/>
+<entry filename="C:\\Users\\Joost\\git\\repository\\ConnectIQ\\MiniDash\\source\\MiniDashView.mc" id="21" lineNum="514" pc="268445816" symbol="toHMS"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="62" symbol="Distance_ErrMeasure_Title"/>
+<entry field="true" id="63" symbol="Distance_ErrMeasure_Title"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry field="true" id="8388959" symbol="cadence"/>
-<entry field="true" id="44" symbol="err_estimate"/>
-<entry id="52" method="true" symbol="getLastEstimate"/>
+<entry field="true" id="45" symbol="err_estimate"/>
+<entry id="53" method="true" symbol="getLastEstimate"/>
 <entry field="true" id="8388733" symbol="timerTime"/>
-<entry field="true" id="40" symbol="vam"/>
+<entry field="true" id="41" symbol="vam"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8390425" module="true" symbol="Properties"/>
-<entry id="50" method="true" symbol="updateEstimate"/>
+<entry id="51" method="true" symbol="updateEstimate"/>
 <entry field="true" id="29" symbol="timeAtDest"/>
 <entry field="true" id="20" symbol="metricDistanceUnits"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
@@ -326,75 +327,76 @@
 <entry field="true" id="12" symbol="FONT_HEIGHT_XTINY"/>
 <entry field="true" id="8388731" symbol="startTime"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry field="true" id="39" symbol="grade"/>
-<entry field="true" id="68" symbol="Altitude_ErrEstimate_Title"/>
+<entry field="true" id="40" symbol="grade"/>
+<entry field="true" id="69" symbol="Altitude_ErrEstimate_Title"/>
 <entry field="true" id="14" symbol="FONT_HEIGHT_SMALL"/>
-<entry field="true" id="60" symbol="ClimbCat_Prompt"/>
+<entry field="true" id="61" symbol="ClimbCat_Prompt"/>
 <entry field="true" id="31" symbol="hrZone"/>
 <entry id="10" object="true" symbol="MiniDashApp"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry field="true" id="37" symbol="ascent"/>
+<entry field="true" id="38" symbol="ascent"/>
 <entry field="true" id="16" symbol="climbCat3"/>
 <entry field="true" id="17" symbol="climbCat2"/>
 <entry field="true" id="18" symbol="climbCat1"/>
-<entry field="true" id="57" symbol="Distance_MaxProcessNoise_Title"/>
+<entry field="true" id="34" symbol="lastElapsedDistance"/>
+<entry field="true" id="58" symbol="Distance_MaxProcessNoise_Title"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="64" symbol="AppName"/>
-<entry field="true" id="66" symbol="Distance_ErrEstimate_Title"/>
+<entry field="true" id="65" symbol="AppName"/>
+<entry field="true" id="67" symbol="Distance_ErrEstimate_Title"/>
 <entry id="9" object="true" symbol="SimpleKalmanFilter"/>
 <entry field="true" id="23" symbol="altitudeConversion"/>
 <entry field="true" id="22" symbol="speedConversion"/>
-<entry field="true" id="58" symbol="Altitude_ErrMeasure_Title"/>
+<entry field="true" id="59" symbol="Altitude_ErrMeasure_Title"/>
 <entry field="true" id="32" symbol="blink"/>
 <entry field="true" id="13" symbol="FONT_HEIGHT_TINY"/>
 <entry id="11" object="true" symbol="MiniDashView"/>
-<entry field="true" id="48" symbol="last_estimate"/>
-<entry field="true" id="47" symbol="current_estimate"/>
+<entry field="true" id="49" symbol="last_estimate"/>
+<entry field="true" id="48" symbol="current_estimate"/>
 <entry id="8388641" module="true" symbol="Math"/>
-<entry field="true" id="56" symbol="LauncherIcon"/>
+<entry field="true" id="57" symbol="LauncherIcon"/>
 <entry field="true" id="27" symbol="routeProgress"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry field="true" id="49" symbol="kalman_gain"/>
+<entry field="true" id="50" symbol="kalman_gain"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry id="51" method="true" symbol="setInitialState"/>
-<entry field="true" id="61" symbol="KalmanFilter_Prompt"/>
+<entry id="52" method="true" symbol="setInitialState"/>
+<entry field="true" id="62" symbol="KalmanFilter_Prompt"/>
 <entry field="true" id="21" symbol="distanceConversion"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389137" method="true" symbol="compute"/>
 <entry field="true" id="8388963" symbol="altitude"/>
-<entry field="true" id="35" symbol="distanceKalmanFilter"/>
-<entry field="true" id="38" symbol="descent"/>
-<entry id="53" method="true" symbol="updateProcessNoise"/>
+<entry field="true" id="36" symbol="distanceKalmanFilter"/>
+<entry field="true" id="39" symbol="descent"/>
+<entry id="54" method="true" symbol="updateProcessNoise"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry field="true" id="25" symbol="currentTime"/>
 <entry id="8389747" method="true" symbol="onTimerStart"/>
-<entry field="true" id="65" symbol="ClimbCat1_Title"/>
+<entry field="true" id="66" symbol="ClimbCat1_Title"/>
 <entry field="true" id="24" symbol="hrZones"/>
 <entry id="8388774" method="true" symbol="abs"/>
 <entry field="true" id="33" symbol="index"/>
 <entry field="true" id="8388734" symbol="elapsedDistance"/>
-<entry field="true" id="43" symbol="err_measure"/>
+<entry field="true" id="44" symbol="err_measure"/>
 <entry field="true" id="15" symbol="FONT_HEIGHT_MEDIUM"/>
 <entry field="true" id="8388958" symbol="speed"/>
 <entry id="8389750" method="true" symbol="onTimerResume"/>
-<entry id="54" module="true" symbol="Layouts"/>
+<entry id="55" module="true" symbol="Layouts"/>
 <entry field="true" id="28" symbol="timeToDest"/>
-<entry field="true" id="69" symbol="Altitude_MaxProcessNoise_Title"/>
+<entry field="true" id="70" symbol="Altitude_MaxProcessNoise_Title"/>
 <entry field="true" id="19" symbol="climbCatHc"/>
-<entry field="true" id="36" symbol="avgSpeed"/>
-<entry field="true" id="45" symbol="qo"/>
+<entry field="true" id="37" symbol="avgSpeed"/>
+<entry field="true" id="46" symbol="qo"/>
 <entry field="true" id="8388740" symbol="maxSpeed"/>
-<entry field="true" id="59" symbol="ClimbCatHc_Title"/>
+<entry field="true" id="60" symbol="ClimbCatHc_Title"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="41" method="true" symbol="getSettings"/>
-<entry field="true" id="63" symbol="ClimbCat3_Title"/>
-<entry id="55" module="true" symbol="Menus"/>
-<entry field="true" id="67" symbol="ClimbCat2_Title"/>
+<entry id="42" method="true" symbol="getSettings"/>
+<entry field="true" id="64" symbol="ClimbCat3_Title"/>
+<entry id="56" module="true" symbol="Menus"/>
+<entry field="true" id="68" symbol="ClimbCat2_Title"/>
 <entry field="true" id="30" symbol="hr"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-<entry field="true" id="46" symbol="q"/>
-<entry field="true" id="34" symbol="altitudeKalmanFilter"/>
-<entry id="42" method="true" symbol="toHMS"/>
+<entry field="true" id="47" symbol="q"/>
+<entry field="true" id="35" symbol="altitudeKalmanFilter"/>
+<entry id="43" method="true" symbol="toHMS"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
@@ -407,72 +409,72 @@
 <entry endPc="268435807" name="value" stackId="1" startPc="268435775"/>
 <entry endPc="268435835" name="state" stackId="1" startPc="268435830"/>
 <entry endPc="268435840" name="state" stackId="1" startPc="268435835"/>
-<entry endPc="268436150" name="maxProcessNoise" stackId="3" startPc="268435886"/>
-<entry endPc="268436150" name="errMeasure" stackId="1" startPc="268435886"/>
-<entry endPc="268436150" name="errEstimate" stackId="2" startPc="268435886"/>
-<entry endPc="268436544" name="i" stackId="3" startPc="268436492"/>
-<entry endPc="268437036" name="lastDistance" stackId="5" startPc="268436891"/>
-<entry endPc="268437036" name="lastAltitude" stackId="4" startPc="268436891"/>
-<entry endPc="268437036" name="currentDistance" stackId="7" startPc="268436891"/>
-<entry endPc="268437036" name="currentAltitude" stackId="6" startPc="268436891"/>
-<entry endPc="268437277" name="timerState" stackId="2" startPc="268436269"/>
-<entry endPc="268437278" name="info" stackId="1" startPc="268436265"/>
-<entry endPc="268437582" name="metricElevationUnits" stackId="1" startPc="268437282"/>
-<entry endPc="268441841" name="t" stackId="27" startPc="268441692"/>
-<entry endPc="268443021" name="v" stackId="26" startPc="268441561"/>
-<entry endPc="268443021" name="arc" stackId="24" startPc="268441561"/>
-<entry endPc="268443021" name="h" stackId="25" startPc="268441561"/>
-<entry endPc="268443021" name="avgSpeedDegree" stackId="23" startPc="268441561"/>
-<entry endPc="268443021" name="speedDegree" stackId="22" startPc="268441561"/>
-<entry endPc="268445455" name="ascDescSplit" stackId="30" startPc="268443024"/>
-<entry endPc="268445455" name="triangleY" stackId="37" startPc="268443024"/>
-<entry endPc="268445455" name="ascDescHeight" stackId="28" startPc="268443024"/>
-<entry endPc="268445455" name="gradeAngle" stackId="36" startPc="268443024"/>
-<entry endPc="268445455" name="gradeHeight" stackId="34" startPc="268443024"/>
-<entry endPc="268445455" name="gradeColor" stackId="35" startPc="268443024"/>
-<entry endPc="268445455" name="ascDescY" stackId="29" startPc="268443024"/>
-<entry endPc="268445455" name="descentStr" stackId="32" startPc="268443024"/>
-<entry endPc="268445455" name="ascentStr" stackId="31" startPc="268443024"/>
-<entry endPc="268445455" name="gradeStr" stackId="33" startPc="268443024"/>
-<entry endPc="268445614" name="y3" stackId="9" startPc="268437587"/>
-<entry endPc="268445614" name="y2" stackId="8" startPc="268437587"/>
-<entry endPc="268445614" name="heartY" stackId="21" startPc="268437587"/>
-<entry endPc="268445614" name="y1" stackId="7" startPc="268437587"/>
-<entry endPc="268445614" name="speedStr" stackId="19" startPc="268437587"/>
-<entry endPc="268445614" name="timeAtDestStr" stackId="16" startPc="268437587"/>
-<entry endPc="268445614" name="bgColor" stackId="2" startPc="268437587"/>
-<entry endPc="268445614" name="penWidth" stackId="10" startPc="268437587"/>
-<entry endPc="268445614" name="x" stackId="5" startPc="268437587"/>
-<entry endPc="268445614" name="startTimeStr" stackId="18" startPc="268437587"/>
-<entry endPc="268445614" name="font" stackId="12" startPc="268437587"/>
-<entry endPc="268445614" name="height" stackId="4" startPc="268437587"/>
-<entry endPc="268445614" name="width" stackId="3" startPc="268437587"/>
-<entry endPc="268445614" name="currentTimeStr" stackId="17" startPc="268437587"/>
-<entry endPc="268445614" name="elapsedDistanceStr" stackId="13" startPc="268437587"/>
-<entry endPc="268445614" name="justification" stackId="11" startPc="268437587"/>
-<entry endPc="268445614" name="x2" stackId="6" startPc="268437587"/>
-<entry endPc="268445614" name="timeToDestStr" stackId="15" startPc="268437587"/>
-<entry endPc="268445614" name="timerTimeStr" stackId="14" startPc="268437587"/>
-<entry endPc="268445614" name="heartColor" stackId="20" startPc="268437587"/>
-<entry endPc="268445615" name="dc" stackId="1" startPc="268437583"/>
-<entry endPc="268445751" name="min" stackId="3" startPc="268445619"/>
-<entry endPc="268445751" name="sec" stackId="4" startPc="268445619"/>
-<entry endPc="268445751" name="hr" stackId="2" startPc="268445619"/>
-<entry endPc="268445752" name="secs" stackId="1" startPc="268445615"/>
+<entry endPc="268436204" name="maxProcessNoise" stackId="3" startPc="268435886"/>
+<entry endPc="268436204" name="errMeasure" stackId="1" startPc="268435886"/>
+<entry endPc="268436204" name="errEstimate" stackId="2" startPc="268435886"/>
+<entry endPc="268436620" name="i" stackId="3" startPc="268436568"/>
+<entry endPc="268437132" name="lastDistance" stackId="5" startPc="268436967"/>
+<entry endPc="268437132" name="lastAltitude" stackId="4" startPc="268436967"/>
+<entry endPc="268437132" name="currentDistance" stackId="7" startPc="268436967"/>
+<entry endPc="268437132" name="currentAltitude" stackId="6" startPc="268436967"/>
+<entry endPc="268437389" name="timerState" stackId="2" startPc="268436341"/>
+<entry endPc="268437390" name="info" stackId="1" startPc="268436337"/>
+<entry endPc="268437754" name="metricElevationUnits" stackId="1" startPc="268437394"/>
+<entry endPc="268442017" name="t" stackId="27" startPc="268441868"/>
+<entry endPc="268443179" name="v" stackId="26" startPc="268441737"/>
+<entry endPc="268443179" name="arc" stackId="24" startPc="268441737"/>
+<entry endPc="268443179" name="h" stackId="25" startPc="268441737"/>
+<entry endPc="268443179" name="avgSpeedDegree" stackId="23" startPc="268441737"/>
+<entry endPc="268443179" name="speedDegree" stackId="22" startPc="268441737"/>
+<entry endPc="268445613" name="ascDescSplit" stackId="30" startPc="268443182"/>
+<entry endPc="268445613" name="triangleY" stackId="37" startPc="268443182"/>
+<entry endPc="268445613" name="ascDescHeight" stackId="28" startPc="268443182"/>
+<entry endPc="268445613" name="gradeAngle" stackId="36" startPc="268443182"/>
+<entry endPc="268445613" name="gradeHeight" stackId="34" startPc="268443182"/>
+<entry endPc="268445613" name="gradeColor" stackId="35" startPc="268443182"/>
+<entry endPc="268445613" name="ascDescY" stackId="29" startPc="268443182"/>
+<entry endPc="268445613" name="descentStr" stackId="32" startPc="268443182"/>
+<entry endPc="268445613" name="ascentStr" stackId="31" startPc="268443182"/>
+<entry endPc="268445613" name="gradeStr" stackId="33" startPc="268443182"/>
+<entry endPc="268445772" name="y3" stackId="9" startPc="268437759"/>
+<entry endPc="268445772" name="y2" stackId="8" startPc="268437759"/>
+<entry endPc="268445772" name="heartY" stackId="21" startPc="268437759"/>
+<entry endPc="268445772" name="y1" stackId="7" startPc="268437759"/>
+<entry endPc="268445772" name="speedStr" stackId="19" startPc="268437759"/>
+<entry endPc="268445772" name="timeAtDestStr" stackId="16" startPc="268437759"/>
+<entry endPc="268445772" name="bgColor" stackId="2" startPc="268437759"/>
+<entry endPc="268445772" name="penWidth" stackId="10" startPc="268437759"/>
+<entry endPc="268445772" name="x" stackId="5" startPc="268437759"/>
+<entry endPc="268445772" name="startTimeStr" stackId="18" startPc="268437759"/>
+<entry endPc="268445772" name="font" stackId="12" startPc="268437759"/>
+<entry endPc="268445772" name="height" stackId="4" startPc="268437759"/>
+<entry endPc="268445772" name="width" stackId="3" startPc="268437759"/>
+<entry endPc="268445772" name="currentTimeStr" stackId="17" startPc="268437759"/>
+<entry endPc="268445772" name="elapsedDistanceStr" stackId="13" startPc="268437759"/>
+<entry endPc="268445772" name="justification" stackId="11" startPc="268437759"/>
+<entry endPc="268445772" name="x2" stackId="6" startPc="268437759"/>
+<entry endPc="268445772" name="timeToDestStr" stackId="15" startPc="268437759"/>
+<entry endPc="268445772" name="timerTimeStr" stackId="14" startPc="268437759"/>
+<entry endPc="268445772" name="heartColor" stackId="20" startPc="268437759"/>
+<entry endPc="268445773" name="dc" stackId="1" startPc="268437755"/>
+<entry endPc="268445909" name="min" stackId="3" startPc="268445777"/>
+<entry endPc="268445909" name="sec" stackId="4" startPc="268445777"/>
+<entry endPc="268445909" name="hr" stackId="2" startPc="268445777"/>
+<entry endPc="268445910" name="secs" stackId="1" startPc="268445773"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
 <dataEntry offset="158" parentId="globals" symbolId="MiniDashView" type="class"/>
-<dataEntry offset="541" parentId="globals" symbolId="SimpleKalmanFilter" type="class"/>
-<dataEntry offset="684" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="763" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="802" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="833" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="864" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="895" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="926" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1061" parentId="globals" symbolId="MiniDashApp" type="class"/>
+<dataEntry offset="549" parentId="globals" symbolId="SimpleKalmanFilter" type="class"/>
+<dataEntry offset="692" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="771" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="810" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="841" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="872" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="903" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="934" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="1069" parentId="globals" symbolId="MiniDashApp" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="SimpleKalmanFilter">

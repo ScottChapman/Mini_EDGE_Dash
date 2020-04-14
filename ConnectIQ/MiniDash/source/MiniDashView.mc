@@ -45,9 +45,10 @@ class MiniDashView extends WatchUi.DataField {
 	// Right Section Variables
 	hidden var index = 0;
 	hidden var altitude = 0;
+	hidden var lastElapsedDistance = 0;
 	hidden var altitudeKalmanFilter;
 	hidden var distanceKalmanFilter;
-	hidden var speed;
+	hidden var speed = 0;
 	hidden var avgSpeed = 0;
 	hidden var maxSpeed = 0;
 	hidden var ascent = 0;
@@ -59,25 +60,25 @@ class MiniDashView extends WatchUi.DataField {
         DataField.initialize();
         hrZones = UserProfile.getHeartRateZones(UserProfile.getCurrentSport());
         
-        var errMeasure = Properties.getValue("AltErrMeasure");
-        var errEstimate = Properties.getValue("AltErrEstimate");
-        var maxProcessNoise = Properties.getValue("AltMaxProcessNoise");
+        var errMeasure = Properties.getValue("AltErrMeasure").toFloat();
+        var errEstimate = Properties.getValue("AltErrEstimate").toFloat();
+        var maxProcessNoise = Properties.getValue("AltMaxProcessNoise").toFloat();
         altitudeKalmanFilter = new SimpleKalmanFilter(errMeasure, errEstimate, maxProcessNoise);
         
-        errMeasure = Properties.getValue("DistErrMeasure");
-        errEstimate = Properties.getValue("DistErrEstimate");
-        maxProcessNoise = Properties.getValue("DistMaxProcessNoise");
+        errMeasure = Properties.getValue("DistErrMeasure").toFloat();
+        errEstimate = Properties.getValue("DistErrEstimate").toFloat();
+        maxProcessNoise = Properties.getValue("DistMaxProcessNoise").toFloat();
         distanceKalmanFilter = new SimpleKalmanFilter(errMeasure, errEstimate, maxProcessNoise);
     }
     
     function onTimerStart() {
     	altitudeKalmanFilter.setInitialState(altitude);
-    	distanceKalmanFilter.setInitialState(elapsedDistance);
+    	distanceKalmanFilter.setInitialState(elapsedDistance - lastElapsedDistance);
     }
     
     function onTimerResume() {
     	altitudeKalmanFilter.setInitialState(altitude);
-    	distanceKalmanFilter.setInitialState(elapsedDistance);
+    	distanceKalmanFilter.setInitialState(elapsedDistance - lastElapsedDistance);
     }
     
     // The given info object contains all the current workout information.
@@ -93,7 +94,7 @@ class MiniDashView extends WatchUi.DataField {
     	// Current Values
     	hr = info.currentHeartRate;
     	cadence = (info.currentCadence != null) ? (info.currentCadence) : (0);
-    	speed = (info.currentSpeed != null) ? (info.currentSpeed) : (null);
+    	speed = (info.currentSpeed != null) ? (info.currentSpeed) : (0);
     	currentTime = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     	altitude = info.altitude;
     	
@@ -124,10 +125,11 @@ class MiniDashView extends WatchUi.DataField {
 	    		var lastAltitude = altitudeKalmanFilter.getLastEstimate();
 	    		var lastDistance = distanceKalmanFilter.getLastEstimate();
 	    		var currentAltitude = altitudeKalmanFilter.updateEstimate(altitude);
-    			var currentDistance = distanceKalmanFilter.updateEstimate(elapsedDistance);
-				grade = (currentAltitude - lastAltitude) / (currentDistance - lastDistance) * 100;
+    			var currentDistance = distanceKalmanFilter.updateEstimate(elapsedDistance - lastElapsedDistance);
+				if (currentDistance != 0) { grade = (currentAltitude - lastAltitude) / currentDistance * 100;}
 				vam = ((currentAltitude - lastAltitude) * 3600).toNumber();
-			}    		
+			}
+			lastElapsedDistance = elapsedDistance;
     		
     		// Route Values
     		distToDest = (info.distanceToDestination != null) ? (info.distanceToDestination) : (0);
@@ -145,16 +147,17 @@ class MiniDashView extends WatchUi.DataField {
     function getSettings() {		
 		// Set distance/speed and altitude conversion factors
 		metricDistanceUnits = (System.getDeviceSettings().distanceUnits == System.UNIT_METRIC) ? true : false;
+		System.println(metricDistanceUnits);
 	    distanceConversion = metricDistanceUnits ? 0.001 : 1/1609.344;
 	    speedConversion = metricDistanceUnits ? 3.6 : (3600/1609.344);
 	    var metricElevationUnits = (System.getDeviceSettings().elevationUnits == System.UNIT_METRIC) ? true : false;
 	    altitudeConversion = metricElevationUnits ? 1 : 0.3048; 
 		
 		// Set lower bound percentage of Climb Categories
-		climbCat3 = Properties.getValue("ClimbCat3");
-	    climbCat2 = Properties.getValue("ClimbCat2");
-	    climbCat1 = Properties.getValue("ClimbCat1");
-	    climbCatHc = Properties.getValue("ClimbCatHc");
+		climbCat3 = Properties.getValue("ClimbCat3").toFloat();
+	    climbCat2 = Properties.getValue("ClimbCat2").toFloat();
+	    climbCat1 = Properties.getValue("ClimbCat1").toFloat();
+	    climbCatHc = Properties.getValue("ClimbCatHc").toFloat();
 	}
     
     // Display the value you computed here. This will be called
@@ -253,7 +256,7 @@ class MiniDashView extends WatchUi.DataField {
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     	dc.drawText(x, y1, font, (hr != null) ? hr : "-", justification);
     	dc.drawText(x, y2, font, (cadence != 0) ? cadence : "-", justification);
-    	var speedStr = (speed != null) ? (speed * speedConversion).toNumber() : "-";
+    	var speedStr = (speed != 0) ? (speed * speedConversion).toNumber() : "-";
     	
     	if ((grade == 0 and speed == 0) or grade.abs() >= climbCat3) {
     		dc.drawText(x, y3, font, speedStr, justification);
@@ -383,11 +386,7 @@ class MiniDashView extends WatchUi.DataField {
 	    	// Draw values
 	    	// Draw Current Speed value
 	    	dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
-	    	if (speed != null and speed != 0) {
-    			speedStr = (speed * speedConversion).format("%.1f");
-    		} else {
-    			speedStr = "-";
-    		}
+	    	speedStr = (speed != 0) ? (speed * speedConversion).format("%.1f") : "-";
 	    	dc.drawText(x, height - FONT_HEIGHT_MEDIUM,
 	    				Gfx.FONT_MEDIUM, speedStr, Gfx.TEXT_JUSTIFY_CENTER);
 	    	// Draw Average Speed value
