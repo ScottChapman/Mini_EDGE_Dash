@@ -76,10 +76,10 @@ class MiniDashView extends WatchUi.DataField {
     // Update Variables upon MiniDashApp.onSettingsChanged()
     function updateSettings() {
 		// Set lower bound percentage of Climb Categories
-		climbCat3 = Properties.getValue("ClimbCat3").toFloat();
-	    climbCat2 = Properties.getValue("ClimbCat2").toFloat();
-	    climbCat1 = Properties.getValue("ClimbCat1").toFloat();
-	    climbCatHc = Properties.getValue("ClimbCatHc").toFloat();
+		climbCat3 = Properties.getValue("ClimbCat3").toNumber();
+	    climbCat2 = Properties.getValue("ClimbCat2").toNumber();
+	    climbCat1 = Properties.getValue("ClimbCat1").toNumber();
+	    climbCatHc = Properties.getValue("ClimbCatHc").toNumber();
 	    
 	    // Create new Kalman Filter for Altitude
         var errMeasure = Properties.getValue("AltErrMeasure").toFloat();

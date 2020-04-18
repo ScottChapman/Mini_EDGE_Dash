@@ -6,10 +6,11 @@
         <property id="ClimbCatHc" type="number">12</property>
         <property id="AltErrMeasure" type="float">5</property>
         <property id="AltErrEstimate" type="float">0.5</property>
-        <property id="AltMaxProcessNoise" type="float">0.1</property>
+        <property id="AltMaxProcessNoise" type="float">0.5</property>
         <property id="DistErrMeasure" type="float">5</property>
-        <property id="DistErrEstimate" type="float">0.10</property>
-        <property id="DistMaxProcessNoise" type="float">2</property>
+        <property id="DistErrEstimate" type="float">0.5</property>
+        <property id="DistMaxProcessNoise" type="float">0.5</property>
+        <property id="AppVersion" type="string">2.0.0</property>
     </properties>
     <settings>
         <setting propertyKey="@Properties.ClimbCat3" title="@Strings.ClimbCat3_Title" prompt="@Strings.ClimbCat_Prompt">
@@ -41,6 +42,9 @@
         </setting>
         <setting propertyKey="@Properties.DistMaxProcessNoise" title="@Strings.Distance_MaxProcessNoise_Title" prompt="@Strings.KalmanFilter_Prompt">
             <settingConfig type="numeric" required="true" />
+        </setting>
+        <setting propertyKey="@Properties.AppVersion" title="@Strings.AppVersion_Title">
+        	<settingConfig type="alphaNumeric" readonly="true" />
         </setting>
     </settings>
 </resources>

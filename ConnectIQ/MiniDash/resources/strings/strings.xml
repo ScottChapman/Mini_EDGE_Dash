@@ -1,5 +1,6 @@
 <strings>
-    <string id="AppName">MiniDash BETA</string>
+    <string id="AppName">Mini EDGE Dash</string>
+    <string id="AppVersion_Title">Version</string>
     <string id="ClimbCat3_Title">Category 3 climb</string>
     <string id="ClimbCat2_Title">Category 2 climb</string>
     <string id="ClimbCat1_Title">Category 1 climb</string>
