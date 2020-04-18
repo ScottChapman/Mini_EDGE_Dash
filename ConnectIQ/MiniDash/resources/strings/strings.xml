@@ -12,5 +12,6 @@
     <string id="Distance_ErrEstimate_Title">Distance - Error of the Estimate</string>
     <string id="Distance_MaxProcessNoise_Title">Distance - Maximum Process Noise</string>
     <string id="KalmanFilter_Prompt">ADVANCED SETTING: Leave these if you don't know what you're doing!
-Use these variables to fine-tune Kalman Filters for Altitude and Distance</string>
+Use these variables to fine-tune Kalman Filters for Altitude and Distance
+Default values: Error of the Measure = 5 | Error of the Estimate = 0.5 | Max Process Noise = 0.5</string>
 </strings>
