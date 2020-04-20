@@ -43,7 +43,6 @@ class MiniDashView extends WatchUi.DataField {
 	hidden var blink = true;
 	
 	// Right Section Variables
-	hidden var index = 0;
 	hidden var altitude = 0;
 	hidden var lastElapsedDistance = 0;
 	hidden var altitudeKalmanFilter;
@@ -111,8 +110,6 @@ class MiniDashView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
     	
-        var timerState = info.timerState;
-    	
     	// Current Values
     	hr = info.currentHeartRate;
     	cadence = (info.currentCadence != null) ? (info.currentCadence) : (0);
@@ -133,7 +130,7 @@ class MiniDashView extends WatchUi.DataField {
 	    }
     	    	
     	// Active Timer Values
-    	if (timerState == Activity.TIMER_STATE_ON) {
+    	if (info.timerState == Activity.TIMER_STATE_ON) {
     	    elapsedDistance = (info.elapsedDistance != null) ? (info.elapsedDistance) : (0);
     	    avgSpeed = (info.averageSpeed != null) ? (info.averageSpeed) : (0);
     	    maxSpeed = (info.maxSpeed != null) ? (info.maxSpeed) : (0);
