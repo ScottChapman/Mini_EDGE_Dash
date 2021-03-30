@@ -40,6 +40,7 @@ class MiniDashView extends WatchUi.DataField {
 	hidden var hr;
 	hidden var hrZone;
 	hidden var cadence = 0;
+	hidden var power = 0;
 	hidden var blink = true;
 	
 	// Right Section Variables
@@ -113,6 +114,7 @@ class MiniDashView extends WatchUi.DataField {
     	// Current Values
     	hr = info.currentHeartRate;
     	cadence = (info.currentCadence != null) ? (info.currentCadence) : (0);
+    	power = (info.currentPower != null) ? (info.currentPower) : (0);
     	speed = (info.currentSpeed != null) ? (info.currentSpeed) : (0);
     	currentTime = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     	altitude = info.altitude;
@@ -252,12 +254,12 @@ class MiniDashView extends WatchUi.DataField {
     /////////////////////////
     	
     	// Draw Values
-    	x = width * 3/5 - 20;
+    	x = width * 3/5 - 20; 
     	font = Gfx.FONT_TINY;
     	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     	dc.drawText(x, y1, font, (hr != null) ? hr : "-", justification);
-    	dc.drawText(x, y2, font, (cadence != 0) ? cadence : "-", justification);
+    	dc.drawText(x, y2, font, (power != 0) ? power : (cadence != 0) ? cadence : "-", justification);
     	var speedStr = (speed != 0) ? (speed * speedConversion).toNumber() : "-";
     	
     	if ((grade == 0 and speed == 0) or grade.abs() >= climbCat3) {
@@ -289,15 +291,26 @@ class MiniDashView extends WatchUi.DataField {
     		}
     	}
     	
-	    	// Draw Pedals
+	    	// Draw Pedals OR Power (Dumbbell)
 	    penWidth = 2;
 	    dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-	    if (blink or cadence == 0) {
-	    	dc.fillCircle(x, y2, penWidth * 2.5);
-	    	dc.setPenWidth(penWidth);
-	    	dc.drawLine(x - penWidth * 3, y2 - penWidth * 3, x + penWidth * 3, y2 + penWidth * 3);
-    		dc.drawLine(x - penWidth * 4, y2 - penWidth * 2.7, x - penWidth * 2, y2 - penWidth * 3.3);
-    		dc.drawLine(x + penWidth * 4, y2 + penWidth * 2.7, x + penWidth * 2, y2 + penWidth * 3.3);
+	    if (blink) {
+	    	if (power != 0) {
+	    		dc.setPenWidth(penWidth);
+	    		dc.drawLine(x - penWidth * 3, y2 - penWidth * 3, x + penWidth * 3, y2 + penWidth * 3);
+	    		dc.setPenWidth(penWidth * 1.5);
+	    		dc.drawLine(x - penWidth * 3.5, y2 - penWidth * 2, x - penWidth * 1.5, y2 - penWidth * 4);
+	    		dc.drawLine(x + penWidth * 3.5, y2 + penWidth * 2, x + penWidth * 1.5, y2 + penWidth * 4);
+	    		dc.setPenWidth(penWidth * 2.5);
+	    		dc.drawLine(x - penWidth * 3, y2 - penWidth * 0.5, x, y2 - penWidth * 3.5);
+	    		dc.drawLine(x + penWidth * 3, y2 + penWidth * 0.5, x, y2 + penWidth * 3.5);
+	    	} else {
+		    	dc.fillCircle(x, y2, penWidth * 2.5);
+		    	dc.setPenWidth(penWidth);
+		    	dc.drawLine(x - penWidth * 3, y2 - penWidth * 3, x + penWidth * 3, y2 + penWidth * 3);
+	    		dc.drawLine(x - penWidth * 4, y2 - penWidth * 2.7, x - penWidth * 2, y2 - penWidth * 3.3);
+	    		dc.drawLine(x + penWidth * 4, y2 + penWidth * 2.7, x + penWidth * 2, y2 + penWidth * 3.3);
+	    	}
 	    }
 	    
     		// Set Heart Color
