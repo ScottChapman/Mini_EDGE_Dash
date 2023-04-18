@@ -23,7 +23,7 @@ class MiniDashView extends WatchUi.DataField {
     hidden var distanceConversion = 0.001f;
     hidden var speedConversion = 3.6f;
     hidden var altitudeConversion = 1;
-    hidden var hrZones;
+    hidden var hrZones = new [6];
 	
 	// Left Section Variables
 	hidden var elapsedDistance = 0;
@@ -144,7 +144,6 @@ class MiniDashView extends WatchUi.DataField {
     		// Calculate smooth Gradient and VAM, applying Simple Kalman Filter
     		if (elapsedDistance != 0) {
 	    		var lastAltitude = altitudeKalmanFilter.getLastEstimate();
-	    		var lastDistance = distanceKalmanFilter.getLastEstimate();
 	    		var currentAltitude = altitudeKalmanFilter.updateEstimate(altitude);
     			var currentDistance = distanceKalmanFilter.updateEstimate(elapsedDistance - lastElapsedDistance);
 				if (currentDistance != 0) { grade = (currentAltitude - lastAltitude) / currentDistance * 100;}
@@ -172,7 +171,6 @@ class MiniDashView extends WatchUi.DataField {
     	var width = dc.getWidth();
     	var height = dc.getHeight();
     	var x;
-    	var x2;
     	var y1 = height / 6;
     	var y2 = height / 2;
     	var y3 = height * 5 / 6;
@@ -291,10 +289,10 @@ class MiniDashView extends WatchUi.DataField {
     		}
     	}
     	
-	    	// Draw Pedals OR Power (Dumbbell)
+		// Draw Pedals OR Power (Dumbbell)
 	    penWidth = 2;
 	    dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-	    if (blink) {
+	    if (blink or cadence == 0 or power == 0) {
 	    	if (power != 0) {
 	    		dc.setPenWidth(penWidth);
 	    		dc.drawLine(x - penWidth * 3, y2 - penWidth * 3, x + penWidth * 3, y2 + penWidth * 3);
@@ -313,7 +311,7 @@ class MiniDashView extends WatchUi.DataField {
 	    	}
 	    }
 	    
-    		// Set Heart Color
+		// Set Heart Color
     	var heartColor = (bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY;
     	if (hrZone != null) {
 	    	if (hrZone == 0) {
@@ -331,10 +329,10 @@ class MiniDashView extends WatchUi.DataField {
 	    	}
 	    }
 	    
-	    	// Draw Heart
+		// Draw Heart
 	    penWidth = 6;
 	    var heartY = y1 - 4;
-	    if (blink or hrZone == null) {
+	    if (blink or hrZone == null or hr == 0) {
 	    	dc.setPenWidth(penWidth);
 	    	dc.setColor(heartColor, Gfx.COLOR_TRANSPARENT);
 	    	dc.fillCircle(x - penWidth / 2.1, heartY, penWidth / 2);
@@ -362,8 +360,8 @@ class MiniDashView extends WatchUi.DataField {
 	    	var speedDegree = 0;
 	    	var avgSpeedDegree = 0;
 	    	var arc = width / 5 - 10;
-	    	var h;
-	    	var v;
+	    	var h = null;
+	    	var v = null;
 	    	if (maxSpeed != 0) {
 	    		if (speed != 0) {speedDegree = 180 - speed / maxSpeed * 180;}
 	    		if (avgSpeed != 0) {
@@ -477,7 +475,6 @@ class MiniDashView extends WatchUi.DataField {
 	    	// Draw Triangle
 	    	dc.setColor(gradeColor, gradeColor);
 	    	var gradeAngle = (grade.abs() / (climbCatHc + 3) * gradeHeight).toNumber();
-	    	var triangleY = [0, gradeHeight - gradeAngle];
 	    	dc.fillPolygon([[x,gradeHeight],[width,gradeHeight],[(grade >= 0) ? width : x, gradeHeight - gradeAngle]]);
 	    	// Draw Value
 	    	if (grade >= climbCat3) {
