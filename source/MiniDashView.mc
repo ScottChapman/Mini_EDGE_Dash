@@ -9,10 +9,12 @@ using Toybox.Math;
 class MiniDashView extends WatchUi.DataField {
 		
 	// Set CONSTANTS
-	hidden var FONT_HEIGHT_XTINY = Gfx.getFontHeight(Gfx.FONT_XTINY);
-	hidden var FONT_HEIGHT_TINY = Gfx.getFontHeight(Gfx.FONT_TINY);
-	hidden var FONT_HEIGHT_SMALL = Gfx.getFontHeight(Gfx.FONT_SMALL);
-	hidden var FONT_HEIGHT_MEDIUM = Gfx.getFontHeight(Gfx.FONT_MEDIUM);
+	// hidden var SCALE_FACTOR = 2;
+	hidden var SCALE_FACTOR = 1;
+	hidden var FONT_HEIGHT_XTINY = (Gfx.getFontHeight(Gfx.FONT_XTINY) * SCALE_FACTOR).abs();
+	hidden var FONT_HEIGHT_TINY = (Gfx.getFontHeight(Gfx.FONT_TINY) * SCALE_FACTOR).abs();
+	hidden var FONT_HEIGHT_SMALL = (Gfx.getFontHeight(Gfx.FONT_SMALL) * SCALE_FACTOR).abs();
+	hidden var FONT_HEIGHT_MEDIUM = (Gfx.getFontHeight(Gfx.FONT_MEDIUM) * SCALE_FACTOR).abs();
     
 	// Settings
     hidden var climbCat3 = 3;
@@ -210,7 +212,8 @@ class MiniDashView extends WatchUi.DataField {
     	
     	// Draw Left Values
     	x = width/5 -7;
-    	font = Gfx.FONT_TINY;
+    	// font = Gfx.FONT_TINY;
+    	font = Gfx.FONT_SMALL;
     	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
 	    
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
@@ -231,7 +234,8 @@ class MiniDashView extends WatchUi.DataField {
     	
     	// Draw Units / Bridge Characters
     	x = width / 5;
-    	font = Gfx.FONT_XTINY;
+    	// font = Gfx.FONT_XTINY;
+    	font = Gfx.FONT_TINY;
     	justification = Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
     	if (metricDistanceUnits) {
@@ -253,7 +257,8 @@ class MiniDashView extends WatchUi.DataField {
     	
     	// Draw Values
     	x = width * 3/5 - 20; 
-    	font = Gfx.FONT_TINY;
+    	//font = Gfx.FONT_TINY;
+    	font = Gfx.FONT_SMALL;
     	justification = Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_WHITE : Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
     	dc.drawText(x, y1, font, (hr != null) ? hr : "-", justification);
@@ -268,7 +273,8 @@ class MiniDashView extends WatchUi.DataField {
     	
     	// Draw Units
     	x = width * 3/5 - 10;
-    	font = Gfx.FONT_XTINY;
+    	// font = Gfx.FONT_XTINY;
+    	font = Gfx.FONT_TINY;
     	justification = Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER;
     	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
     	if ((grade == 0 and speed == 0) or grade.abs() >= climbCat3) {
@@ -409,10 +415,10 @@ class MiniDashView extends WatchUi.DataField {
 	    	dc.drawText(width - 2, 0, Gfx.FONT_SMALL, (maxSpeed * speedConversion).format("%.1f"), Gfx.TEXT_JUSTIFY_RIGHT);
 	    	// Draw Average Speed label
 	    	dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_TRANSPARENT);
-	    	dc.drawText(width * 3/5 + 2, FONT_HEIGHT_SMALL - 3, Gfx.FONT_XTINY, "avg", Gfx.TEXT_JUSTIFY_LEFT);
+	    	dc.drawText(width * 3/5 + 2, FONT_HEIGHT_SMALL - 3, Gfx.FONT_TINY, "avg", Gfx.TEXT_JUSTIFY_LEFT);
 	    	// Draw Max Speed label
 	    	dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
-	    	dc.drawText(width - 2, FONT_HEIGHT_SMALL - 3, Gfx.FONT_XTINY, "max", Gfx.TEXT_JUSTIFY_RIGHT);
+	    	dc.drawText(width - 2, FONT_HEIGHT_SMALL - 3, Gfx.FONT_TINY, "max", Gfx.TEXT_JUSTIFY_RIGHT);
 	    	// Draw Speed unit
 	    	dc.setColor((bgColor == Gfx.COLOR_BLACK) ? Gfx.COLOR_LT_GRAY : Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 	    	dc.drawText(x + 1, 0, Gfx.FONT_XTINY, (metricDistanceUnits) ? "km/h" : "mph", Gfx.TEXT_JUSTIFY_CENTER);
